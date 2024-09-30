@@ -15,7 +15,6 @@ const App: FC<AppProps> = ({ onSubmit }) => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(e);
     const formData = new FormData(e.currentTarget);
     onSubmit(Object.fromEntries(formData));
   };
